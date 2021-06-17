@@ -1,0 +1,26 @@
+#header {
+    display: flex;
+    margin: 0px;
+
+    .logo {
+        width: 60px;
+        height: auto;
+    }
+
+    .nav_links {
+        display: flex;
+        width: 100vw;
+        text-decoration: none;
+        list-style: none;
+        background-color: black;
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li {
+            padding: 20px;
+            
+        }
+    }
+}

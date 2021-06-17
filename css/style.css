@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+}
+
+#header {
+  display: flex;
+  margin: 0px;
+}
+
+#header .logo {
+  width: 60px;
+  height: auto;
+}
+
+#header .nav_links {
+  display: flex;
+  width: 100vw;
+  text-decoration: none;
+  list-style: none;
+  background-color: black;
+}
+
+#header .nav_links a {
+  text-decoration: none;
+  color: white;
+}
+
+#header .nav_links li {
+  padding: 20px;
+}
+/*# sourceMappingURL=style.css.map */
