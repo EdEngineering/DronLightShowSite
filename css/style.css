@@ -12,6 +12,7 @@ html {
 
 body {
   background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #header {
@@ -39,5 +40,32 @@ body {
 
 #header .nav_links li {
   padding: 20px;
+}
+
+#header .nav_links li:hover {
+  background-color: blue;
+}
+
+.hero {
+  display: flex;
+  height: 100vh;
+  background-image: url(https://wallpaperaccess.com/full/149370.jpg);
+  background-size: cover;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 25px;
+}
+
+.hero .hero-description, .hero .video {
+  margin: 120px;
 }
 /*# sourceMappingURL=style.css.map */
