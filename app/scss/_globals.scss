@@ -7,9 +7,52 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 
 body {
-    background-color: #fff;
+    background-color: #171717;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+p {
+    font-size: 20px;
+}
+
+#header {
+    display: flex;
+    margin: 0px;
+
+    .logo {
+        width: 60px;
+        height: auto;
+    }
+
+    .nav_links {
+        display: flex;
+        width: 100vw;
+        text-decoration: none;
+        list-style: none;
+        background-color: black;
+
+        a{
+            text-decoration: none;
+            color: white;
+
+        }
+        li {
+            padding: 20px;
+
+            &:hover {
+                background-color: blue;
+            }
+            
+        }
+    }
 }
