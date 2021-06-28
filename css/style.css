@@ -78,6 +78,9 @@ p {
   body #project_des {
     height: auto;
   }
+  .container {
+    flex-direction: column;
+  }
 }
 
 .hero {

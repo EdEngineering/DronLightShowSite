@@ -78,5 +78,8 @@ p {
   body #project_des {
     height: auto;
   }
+  .container {
+    flex-direction: column;
+  }
 }
 /*# sourceMappingURL=aboutus_style.css.map */
