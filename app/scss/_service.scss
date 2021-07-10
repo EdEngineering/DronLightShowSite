@@ -2,16 +2,55 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
 
 
+#Head-product {
+  display: flex;
+  margin: 30px;
+  margin-left: 0px;
+  height: 100vh;
+  align-items: center;
+  padding: 20px;
+  padding-left: 50px;
+
+  .description {
+    
+    p{
+      padding-bottom: 30px;
+    }
+    
+  }
+
+  .videoiframe {
+      position: relative;
+      width: 100%;
+      height: 60%;
+
+      iframe{
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%
+      }
+  }
+}
+
+#products{
+  background: #06020c;
+  h1{
+    margin-left: 50px;
+    padding-top: 30px;
+  }
+}
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url(/images/NightSkyBanner.jpg);
-    margin-top:50px;
-    
-    
-}
+    padding: 40px;
+    margin-top:40px;
+  }
+
 .snip1418 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;

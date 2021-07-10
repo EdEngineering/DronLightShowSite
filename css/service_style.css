@@ -80,9 +80,49 @@ p {
   body #project_des {
     height: auto;
   }
-  .container {
+  .container, #Head-product {
     flex-direction: column;
   }
+  #Head-product .videoiframe {
+    height: 50%;
+  }
+}
+
+#Head-product {
+  display: flex;
+  margin: 30px;
+  margin-left: 0px;
+  height: 100vh;
+  align-items: center;
+  padding: 20px;
+  padding-left: 50px;
+}
+
+#Head-product .description p {
+  padding-bottom: 30px;
+}
+
+#Head-product .videoiframe {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+
+#Head-product .videoiframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#products {
+  background: #06020c;
+}
+
+#products h1 {
+  margin-left: 50px;
+  padding-top: 30px;
 }
 
 .container {
@@ -90,7 +130,8 @@ p {
   align-items: center;
   justify-content: center;
   background-image: url(/images/NightSkyBanner.jpg);
-  margin-top: 50px;
+  padding: 40px;
+  margin-top: 40px;
 }
 
 .snip1418 {

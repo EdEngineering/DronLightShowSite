@@ -1,0 +1,16 @@
+#about {
+    padding: 50px;
+    .title {
+        h1{
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 50px;
+        }
+    }
+    .pdf {
+        position: relative;
+        height: fit-content;
+        margin: 0 auto;
+    }
+}

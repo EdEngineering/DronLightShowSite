@@ -20,8 +20,12 @@
         }
     }
 
-    .container {
+    .container, #Head-product {
         flex-direction: column;
     }
-
+    #Head-product {
+        .videoiframe{
+            height: 50%;
+        }
+    }
 }

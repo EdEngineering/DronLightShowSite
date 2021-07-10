@@ -78,8 +78,29 @@ p {
   body #project_des {
     height: auto;
   }
-  .container {
+  .container, #Head-product {
     flex-direction: column;
   }
+  #Head-product .videoiframe {
+    height: 50%;
+  }
+}
+
+#about {
+  padding: 50px;
+}
+
+#about .title h1 {
+  margin-bottom: 20px;
+}
+
+#about .title p {
+  margin-bottom: 50px;
+}
+
+#about .pdf {
+  position: relative;
+  height: fit-content;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=aboutus_style.css.map */
