@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+html{
+    @supports(display: grid) {
+        display: block;
+      }
+}
 .hero {
     display: flex;
     height: 100vh;
@@ -16,26 +22,155 @@
 }
 
 #project_des {
-    height: 100vh;
-    
-
-    .des {
-        position: relative;
-        border-radius: 25px;
-        color: black;
-        background-color: #DDDDDD;
-        width: 90%;
-        height: 30%;
+    height: auto;
+    .title {
+        margin-top: 60px;
+        background: #06020c;
         padding: 30px 25px;
-        margin: 30px auto;
-    }
 
-    .image {
+        h1 {
+            margin-left: 50px;
+        }
+    }
+    .des{
         position: relative;
-        background-color: black;
-        width: 100%;
-        height: 20%;
-        margin: 0;
+        padding: 30px 25px;
+        margin: 30px 50px;
+
         
     }
+
+}
+
+
+.message {
+  border: 1px solid #d2d0d0;
+  padding: 2em;
+  font-size: 1.7vw;
+  box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
+  
+  @supports(display: grid) {
+    display: none;
+  }
+}
+
+.section {
+  display: none;
+  padding: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 1.5em;
+    padding-left: 0.5em;
+  }
+  
+  @media screen and (min-width: 768px) {
+    padding: 4rem;
+  }
+  
+  @supports(display: grid) {
+    display: block;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: row dense;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  background: #0c9a9a;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  color: #fff;
+  background:  url('https://globalnews.ca/wp-content/uploads/2020/11/drone-light.jpg?quality=85&strip=all');
+  background-size: cover;
+  background-position: center;
+  box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  counter-increment: item-counter;
+  
+  &:nth-of-type(2n) {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5db8d09799b6e230aca05ac4/1572459456689-7GK8Y8N53634L105VBZ8/ke17ZwdGBToddI8pDm48kE_Flx8FzqgJ6wV1_BmCavpZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxcey4jEyis3vjB-bw-ZsE2FTGhKv_NqYxq7iJsG5yjuThZCsuhTlQlW7lRC7RDVNY/final_5db9d35c0e795f00147da54c_948776.gif?format=2500w');
+  }
+
+  &:nth-of-type(3n) {
+    background-image: url('https://www.galadrone.show/wp-content/uploads/2019/08/galadrone-light-show-globe-0.2-seconds.gif');
+  }
+  
+  &:nth-of-type(4n) {
+    background-image: url('https://www.brandchannel.com/wp-content/uploads/2016/05/intel-drones-600.jpg');
+  }
+  
+  &:nth-of-type(5n) {
+    background-image: url('https://dronedj.com/wp-content/uploads/sites/2/2019/11/Drone-light-shows-in-China-are-showing-what-is-possible.jpg?quality=82&strip=all&w=1600');
+  }
+  
+  &:nth-of-type(6n) {
+    background-image: url('https://hgglobal.oss-accelerate.aliyuncs.com/test/news/36ab22b2-88de-4903-8bc6-f4c3570d0a51.gif');
+  }
+  
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  &:hover {
+    transform: scale(1.05);
+    
+    &:after {
+      opacity: 0;
+    }
+  }
+
+  &--medium {
+    grid-row-end: span 2;
+  }
+
+  &--large {
+    grid-row-end: span 3;
+  }
+
+  &--full {
+    grid-column-end: auto;
+
+    @media screen and (min-width: 768px) {
+      grid-column: 1/-1;
+      grid-row-end: span 2;
+    }
+  }
+  
+  &__details {
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    color: #444;
+    background: #efefff;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    color: #828282;
+    
+    &:before {
+      content: counter(item-counter);
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding-right: 0.5em;
+      color: #444;
+    }
+  }
 }
